@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo">Hola mundo landscape</string>
+    <color name="color_text">#77eeaa</color>
+    <color name="color_bg">#666</color>
+</resources>
