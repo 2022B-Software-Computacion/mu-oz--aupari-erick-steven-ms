@@ -13,7 +13,7 @@ class ECrudEntrenador : AppCompatActivity() {
         val btnBuscarBDD = findViewById<Button>(R.id.btn_buscar_bdd)
         btnBuscarBDD.setOnClickListener{
             val id = findViewById<EditText>(R.id.input_id)
-            val nombre = findViewById<EditText>(R.id.input_id)
+            val nombre = findViewById<EditText>(R.id.input_nombre)
             val descripcion = findViewById<EditText>(R.id.input_descripcion)
             val entrenador = EBaseDeDatos.tablaEntrenador!!
                 .consultarEntrenadorPorId(
@@ -24,16 +24,17 @@ class ECrudEntrenador : AppCompatActivity() {
             descripcion.setText(entrenador.descripcion)
         }
 
-        val btnCrear = findViewById<Button>(R.id.btn_buscar_bdd)
+        val btnCrear = findViewById<Button>(R.id.btn_crear_bdd)
         btnCrear.setOnClickListener{
 
-            val nombre = findViewById<EditText>(R.id.input_id)
+            val nombre = findViewById<EditText>(R.id.input_nombre)
             val descripcion = findViewById<EditText>(R.id.input_descripcion)
-            val entrendor = EBaseDeDatos.tablaEntrenador!!
+            val entrenador = EBaseDeDatos.tablaEntrenador!!
                 .crearEntrenador(
                     nombre.text.toString(),
                     descripcion.text.toString()
                 )
+            println(entrenador)
         }
 
         val btnActualizar = findViewById<Button>(R.id.btn_actualizar_bdd)
@@ -41,7 +42,7 @@ class ECrudEntrenador : AppCompatActivity() {
             val id = findViewById<EditText>(R.id.input_id)
             val nombre = findViewById<EditText>(R.id.input_nombre)
             val descripcion = findViewById<EditText>(R.id.input_descripcion)
-            EBaseDeDatos.tablaEntrenador!!.actualizararEntrenadorFormulario(
+            EBaseDeDatos.tablaEntrenador!!.actualizarEntrenadorFormulario(
                 nombre.text.toString(), descripcion.text.toString(), id.text.toString().toInt()
             )
         }

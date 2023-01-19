@@ -1,7 +1,8 @@
 package com.example.esmnapplication
 
+
 class EBaseDeDatos {
-    companion object{
+    companion object {
         var tablaEntrenador: ESqliteHelperEntrenador? = null
     }
 }
