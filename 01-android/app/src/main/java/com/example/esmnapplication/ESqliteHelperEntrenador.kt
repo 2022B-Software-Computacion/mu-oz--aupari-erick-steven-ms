@@ -86,7 +86,7 @@ class ESqliteHelperEntrenador(
             )
 
         conexionEscritura.close()
-        return if(resultadoActualizacion.toInt() == -1) false else true
+        return if(resultadoActualizacion == -1) false else true
     }
     fun consultarEntrenadorPorId(
         id: Int
