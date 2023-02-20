@@ -8,7 +8,6 @@ import android.provider.ContactsContract
 import android.util.Log
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
-import com.example.esmnapplication.R.*
 
 class MainActivity : AppCompatActivity() {
     val contenidoIntentImplicito = registerForActivityResult(
@@ -52,16 +51,16 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_main) //apunta a la carpeta de recursos
+        setContentView(R.layout.activity_main) //apunta a la carpeta de recursos
 
         EBaseDeDatos.tablaEntrenador = ESqliteHelperEntrenador(this)
 
 
-        val botonCicloVida = findViewById<Button>(id.btn_ciclo_vida)
+        val botonCicloVida = findViewById<Button>(R.id.btn_ciclo_vida)
         botonCicloVida.setOnClickListener{
             irActividad(ACicloVida::class.java)
         }
-        val botonList = findViewById<Button>(id.btn_ir_list_view)
+        val botonList = findViewById<Button>(R.id.btn_ir_list_view)
         botonList.setOnClickListener{irActividad(BListView::class.java)}
 
         val botonIntentImplicito = findViewById<Button>(R.id.btn_ir_intent_implicito)
@@ -80,6 +79,27 @@ class MainActivity : AppCompatActivity() {
         btnSqlite.setOnClickListener{
             irActividad(ECrudEntrenador::class.java)
         }
+
+        val btnRv = findViewById<Button>(R.id.btn_recyclerview)
+        btnRv.setOnClickListener{
+            irActividad(GRecyclerView::class.java)
+
+        }
+
+        val btnMaps = findViewById<Button>(R.id.btn_google_maps)
+        btnMaps.setOnClickListener{
+            irActividad(HGoogleMapsActivity::class.java)
+        }
+        val btnFBUI = findViewById<Button>(R.id.btn_intent_firebase_ui)
+        btnFBUI.setOnClickListener{
+            irActividad(IFirebaseUIAuth::class.java)
+        }
+
+        val btnFStore = findViewById<Button>(R.id.btn_intent_firestore)
+        btnFStore.setOnClickListener{
+            irActividad(JFirebaseFirestore::class.java)
+        }
+
     }
 
     fun abrirActividadConParametros(
