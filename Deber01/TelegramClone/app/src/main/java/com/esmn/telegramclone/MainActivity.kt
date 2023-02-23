@@ -35,17 +35,20 @@ class MainActivity : AppCompatActivity() {
         )
         val listMessage2 = arrayListOf<Message>()
         listMessage2.add(
-            Message("Alejandra", "Es todo.", "2:30")
+            Message("Alejandra", "Visitaré a mi abuela el fin de semana", "2:30")
         )
         listMessage2.add(
-            Message("Alejandra", "No te preocupes", "2:31")
+            Message("Alejandra", "cuidas de mi gato?", "2:31")
+        )
+        listMessage2.add(
+            Message("Alejandra", "solo sera un par de dias", "2:31")
         )
         val listMessage3 = arrayListOf<Message>()
         listMessage3.add(
-            Message("Tio Carlos", "Es todo.", "2:30")
+            Message("Tio Carlos", "Visite a la abuela este fin de semana", "2:30")
         )
         listMessage3.add(
-            Message("Tio Carlos", "No te preocupes", "2:31")
+            Message("Tio Carlos", "seria bueno que la llames", "2:31")
         )
         listChats = arrayListOf<Chat>()
         listChats.add(Chat("Mickaela", listMessage1 , R.drawable.img1))
