@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "329206388821",
+    "project_id": "playlist-8c338",
+    "storage_bucket": "playlist-8c338.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329206388821:android:2b7d1a56078a5a22839cdc",
+        "android_client_info": {
+          "package_name": "com.esmn.playlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329206388821-022d7ohkjab03qtf0ec1n9o0cdl3fsv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrOOUWzhXejAkTb4Ct9kPPFWEDqc9hJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329206388821-022d7ohkjab03qtf0ec1n9o0cdl3fsv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
